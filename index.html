@@ -1,71 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#020711">
 
 <title>Earn with Hunter</title>
 
 <style>
-*{box-sizing:border-box}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
 html,body{
-  margin:0;
   width:100%;
   min-height:100%;
-  background:#020711;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  display:flex;
-  justify-content:center;
-  overflow-x:hidden;
-}
-
-.page{
-  position:relative;
-  width:min(100vw,768px);
-  min-height:100svh;
+  min-height:100vh;
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:22px;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#020711;
+  color:white;
+  overflow:hidden;
 }
 
-.card{
-  position:relative;
+.container{
   width:100%;
   max-width:620px;
-  min-height:calc(100svh - 44px);
-  border:1px solid rgba(0,190,255,.35);
-  border-radius:30px;
-  overflow:hidden;
-
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:25px;
   background:
-    radial-gradient(
-      circle at 50% 22%,
-      rgba(0,183,255,.18),
-      transparent 35%
-    ),
-    linear-gradient(
-      160deg,
-      #06101e,
-      #02050b 65%,
-      #00111b
-    );
-
-  box-shadow:
-    0 0 45px rgba(0,183,255,.16),
-    inset 0 0 60px rgba(0,183,255,.05);
+    radial-gradient(circle at 50% 30%,#07304b 0%,#020711 45%,#01040a 100%);
 }
 
-.grid{
-  position:absolute;
-  inset:0;
-  opacity:.12;
+.box{
+  width:100%;
+  padding:45px 25px;
+  text-align:center;
+  border:1px solid #087ea8;
+  border-radius:28px;
+  background:rgba(3,14,26,.9);
+  box-shadow:0 0 35px rgba(0,190,255,.25);
+}
 
-  background-image:
-    linear-gradient(
-      rgba(
+.logo{
+  width:190px;
+  height:190px;
+  margin:0 auto 25px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:3px solid #00c8ff;
+  background:#061522;
+  box-shadow:
+    0 0 15px #00c8ff,
+    0 0 45px rgba(0,200,255,.45);
+}
+
+.logo svg{
+  width:130px;
+  height:130px;
+}
+
+h1{
+  font-size:42px;
+  line-height:1.1;
+  margin-bottom:12px;
+  text-shadow:0 0 15px rgba(0,200,255,.7);
+}
+
+.subtitle{
+  color:#a9e9ff;
+  font-size:16px;
+  letter-spacing:1.5px;
+  margin-bottom:30px;
+}
+
+.join{
+  display:block;
+  width:100%;
+  max-width:400px;
+  margin:auto;
+  padding:17px 20px;
+  border-radius:50px;
+  background:#00c8ff;
+  color:#001018;
+  text-decoration:none;
+  font-size:21px;
+  font-weight:bold;
+  box-shadow:0 0 15px #00c8ff,0 0 35px rgba(0,200,255,.5);
+}
+
+.join:active{
+  transform:scale(.98);
+}
+
+.join small{
+  font-size:15px;
+  margin-left:7px;
+}
+
+.note{
+  margin-top:15px;
+  color:#6d9aaa;
+  font-size:12px;
+}
+
+@media(max-width:450px){
+
+  .container{
+    padding:12px;
+  }
+
+  .box{
+    padding:35px 18px;
+    border-radius:22px;
+  }
+
+  .logo{
+    width:170px;
+    height:170px;
+  }
+
+  .logo svg{
+    width:115px;
+    height:115px;
+  }
+
+  h1{
+    font-size:34px;
+  }
+
+  .subtitle{
+    font-size:14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="box">
+
+    <div class="logo">
+
+      <svg viewBox="0 0 200 200"
+           xmlns="http://www.w3.org/2000/svg">
+
+        <path
+          d="M30 155V90
+             M60 155V60
+             M90 155V105
+             M120 155V40
+             M150 155V75
+             M175 155V25"
+          stroke="#00c8ff"
+          stroke-width="10"
+          stroke-linecap="round"/>
+
+        <path
+          d="M25 120
+             L55 92
+             L85 118
+             L115 65
+             L145 95
+             L177 48"
+          fill="none"
+          stroke="white"
+          stroke-width="8"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+        <path
+          d="M25 155H177"
+          stroke="#00c8ff"
+          stroke-width="6"
+          stroke-linecap="round"/>
+
+        <circle
+          cx="115"
+          cy="65"
+          r="9"
+          fill="#00c8ff"/>
+
+      </svg>
+
+    </div>
+
+    <h1>Earn with Hunter</h1>
+
+    <div class="subtitle">
+      COLOR PREDICTION • TELEGRAM CHANNEL
+    </div>
+
+    <a
+      class="join"
+      href="https://t.me/+A2NxPwFD38o2OGI1"
+      target="_blank"
+      rel="noopener noreferrer">
+
+      Join Now
+      <small>अभी जुड़ें</small>
+
+    </a>
+
+    <div class="note">
+      Tap the button to open Telegram
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
